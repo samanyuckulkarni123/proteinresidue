@@ -22,7 +22,7 @@ interaction_thresholds = {
     "hydrophobic_interaction": 4.5
 }
 
-hydrophobic_residues = {"ALA", "VAL", "LEU", "ILE", "MET", "PHE", "PRO", "TRP"}
+hydrophobic_residues = {"ALA", "VAL", "LEU", "ILE", "MET", "PHE", "PRO", "TRP", "GLY"}
 polar_residues = {"SER", "THR", "ASN", "GLN", "TYR", "CYS"}
 charged_residues = {"LYS", "ARG", "HIS", "ASP", "GLU"}
 
