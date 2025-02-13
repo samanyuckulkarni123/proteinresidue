@@ -22,7 +22,7 @@ interaction_thresholds = {
     "van_der_waals": 4.0,
     "pi_pi_stacking": 5.0,
     "hydrophobic_interaction": 4.5
-}
+} #need to implement using torsion angle rotation
 
 rotational_thresholds = {
     "hydrogen_bonds": 30,
