@@ -1,5 +1,7 @@
 from Bio.PDB import PDBParser, DSSP, NeighborSearch
 from Bio.PDB.Polypeptide import is_aa
+from Bio.PDB import PDBParser, Vector
+from Bio.PDB.vectors import calc_dihedral
 import numpy as np
 
 interaction_letters = {
@@ -20,6 +22,15 @@ interaction_thresholds = {
     "van_der_waals": 4.0,
     "pi_pi_stacking": 5.0,
     "hydrophobic_interaction": 4.5
+}
+
+rotational_thresholds = {
+    "hydrogen_bonds": 30,
+    "disulfide_bridge": 20,
+    "ionic_bonds": 40,
+    "van_der_waals": 45,
+    "pi_pi_stacking": 25,
+    "hydrophobic_interaction": 35
 }
 
 hydrophobic_residues = {"ALA", "VAL", "LEU", "ILE", "MET", "PHE", "PRO", "TRP", "GLY"}
